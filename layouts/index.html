@@ -1,3 +1,35 @@
-{{ define "main" }}
-<h1>Coming soon.</h1>
-{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ block "title" . }}{{ .Site.Title }}{{ end }}
+    </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: 'Courier Prime', monospace;
+            font-size: 140%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Coming soon.</h1>
+</body>
+
+</html>
